@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header__body {
+}
+
+.logo {
+  font-size: 32px;
+  line-height: calc(42 / 32);
+  display: flex;
+  color: $white;
+}
+.logo__icon {
+  fill: $green;
+  margin-right: 6px;
+}
+.icon__container {
+}
+.logo__span {
+  color: $green;
+}
+.header__list {
+  display: flex;
+  gap: 13px;
+
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  color: #ffffff;
+}
+.header__list-item {
+}
+.heder__link {
+  color: inherit;
+}
