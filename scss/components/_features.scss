@@ -10,7 +10,7 @@
   width: 100%;
 }
 .features-item {
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
   width: 220px;
 }
 .features-item__icon-container {
@@ -29,16 +29,13 @@
 .fetures-item__title {
   font-weight: 400;
   margin: 0 auto 15px;
-  //   max-width: 220px;
   font-size: 18px;
   line-height: calc(30 / 18);
   text-align: center;
 }
 .features-item__text {
   margin: 0 auto;
-  //   width: 220px;
   line-height: calc(26 / 16);
-
   text-align: center;
 }
 
