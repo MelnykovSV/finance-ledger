@@ -18,7 +18,7 @@
   <body>
     <header class="header">
       <div class="header__body container">
-        <nav>
+        <nav class="header__nav">
           <a href="" class="logo">
             <svg class="logo__icon" width="40" height="35">
               <use href="images/icons.svg#icon-book"></use>
@@ -48,6 +48,7 @@
     </header>
     <main class="main">
       <section class="hero">
+        <div class="hero__body"></div>
         <h1 class="hero__title">The Sky Is The Limit</h1>
         <p class="hero__subtitle">
           We provide world class financial assistance
@@ -56,10 +57,14 @@
       </section>
       <section class="features">
         <div class="container">
-          <h2 class="features__title">Features</h2>
+          <h2 class="features__title visually-hidden">Features</h2>
           <ul class="features__list">
             <li class="features-item">
-              <div class="features-item__icon-container"></div>
+              <div class="features-item__icon-container">
+                <svg class="features-item__icon" width="34" height="34">
+                  <use href="images/icons.svg#icon-university"></use>
+                </svg>
+              </div>
               <h3 class="fetures-item__title">Investmant Banking</h3>
               <p class="features-item__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -67,7 +72,11 @@
               </p>
             </li>
             <li class="features-item">
-              <div class="features-item__icon-container"></div>
+              <div class="features-item__icon-container">
+                <svg class="features-item__icon" width="34" height="34">
+                  <use href="images/icons.svg#icon-portfolio"></use>
+                </svg>
+              </div>
               <h3 class="fetures-item__title">Portfolio Manager</h3>
               <p class="features-item__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -75,7 +84,11 @@
               </p>
             </li>
             <li class="features-item">
-              <div class="features-item__icon-container"></div>
+              <div class="features-item__icon-container">
+                <svg class="features-item__icon" width="34" height="34">
+                  <use href="images/icons.svg#icon-pencil"></use>
+                </svg>
+              </div>
               <h3 class="fetures-item__title">Tax & Custudio</h3>
               <p class="features-item__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
