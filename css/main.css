@@ -19,8 +19,8 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: min(100%, 768px);
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -520,4 +520,23 @@ button {
     flex-wrap: wrap;
     gap: 7px;
   }
+}
+.blog__img-container {
+  display: block;
+}
+
+.blog__img {
+  width: min(320px, 100%);
+  margin: 0 auto;
+}
+
+.blog__content {
+  padding: 30px;
+  background-color: #0284d0;
+}
+
+.blog__date {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

@@ -394,8 +394,27 @@
         </div>
       </section>
       <section class="blog">
-        <div class="container">
-          <img src="" alt="" class="blog__img" />
+        <picture class="blog__img-container">
+          <source
+            srcset="
+              ./images/blog-desktop.jpg    1x,
+              ./images/blog-desktop-x2.jpg 2x
+            "
+            media="(min-width: 1360px)"
+          />
+          <source
+            srcset="./images/blog-tablet.jpg 1x, ./images/blog-tablet-x2.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/blog-mobile.jpg 1x, ./images/blog-mobile-x2.jpg 2x"
+            media=""
+          />
+
+          <img src="./images/blog-mobile.jpg" alt="" class="blog__img" />
+        </picture>
+
+        <div class="blog__content">
           <p class="blog__date">April 16 2020</p>
           <h2 class="blog__title">Blog Post One</h2>
           <p class="blog__text">
