@@ -531,6 +531,8 @@ button {
 }
 
 .blog__content {
+  margin: 0 auto;
+  width: min(320px, 100%);
   padding: 30px;
   background-color: #0284d0;
 }
@@ -539,4 +541,35 @@ button {
   font-size: 18px;
   line-height: 1.6666666667;
   color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.blog__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.2631578947;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.blog__text {
+  line-height: 1.625;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.blog__button {
+  padding: 10px 40px;
+  line-height: 1.625;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #0284d0;
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }/*# sourceMappingURL=main.css.map */

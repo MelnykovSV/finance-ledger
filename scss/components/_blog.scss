@@ -1,7 +1,6 @@
 .blog {
 }
-.container {
-}
+
 .blog__img-container {
   display: block;
 }
@@ -10,17 +9,43 @@
   margin: 0 auto;
 }
 .blog__content {
+  margin: 0 auto;
+  width: min(320px, 100%);
   padding: 30px;
   background-color: $blue;
 }
 .blog__date {
   font-size: 18px;
   line-height: calc(30 / 18);
-  color: #ffffff;
+  color: $white;
+  margin-bottom: 5px;
 }
 .blog__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: calc(48 / 38);
+  color: $white;
+  margin-bottom: 25px;
 }
 .blog__text {
+  line-height: calc(26 / 16);
+
+  color: $white;
+  margin-bottom: 14px;
 }
 .blog__button {
+  padding: 10px 40px;
+
+  line-height: calc(26 / 16);
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: $blue;
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
