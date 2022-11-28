@@ -401,14 +401,17 @@
               ./images/blog-desktop-x2.jpg 2x
             "
             media="(min-width: 1360px)"
+            sizes="100%"
           />
           <source
             srcset="./images/blog-tablet.jpg 1x, ./images/blog-tablet-x2.jpg 2x"
             media="(min-width: 768px)"
+            sizes="100%"
           />
           <source
             srcset="./images/blog-mobile.jpg 1x, ./images/blog-mobile-x2.jpg 2x"
             media=""
+            sizes="(min-width: 320px) 320px, 100%"
           />
 
           <img src="./images/blog-mobile.jpg" alt="" class="blog__img" />
@@ -427,7 +430,7 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="team__container">
           <p class="team__subtitle">Who we are</p>
           <h2 class="team__title">Our Professional Team</h2>
           <p class="team__text">
@@ -436,27 +439,157 @@
           </p>
           <ul class="team__list">
             <li class="team__list-item member-card">
-              <img src="" alt="" class="member-card__img" />
-              <h3 class="member-card__member">John Doe</h3>
-              <p class="member-card__position">President</p>
+              <picture class="member__img-container">
+                <source
+                  srcset="
+                    ./images/member1-desktop.jpg    1x,
+                    ./images/member1-desktop-x2.jpg 2x
+                  "
+                  media="(min-width: 1360px)"
+                  sizes="(min-width: 1360px) 420px"
+                />
+                <source
+                  srcset="
+                    ./images/member1-tablet.jpg    1x,
+                    ./images/member1-tablet-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 223px"
+                />
+                <source
+                  srcset="
+                    ./images/member1-mobile.jpg    1x,
+                    ./images/member1-mobile-x2.jpg 2x
+                  "
+                  media=""
+                  sizes="(min-width: 320px) 280px, 100%"
+                />
+
+                <img
+                  src="./images/member1-mobile.jpg"
+                  alt=""
+                  class="member-card__img"
+                />
+              </picture>
+              <div class="member-card__text">
+                <h3 class="member-card__member">John Doe</h3>
+                <p class="member-card__position">President</p>
+              </div>
             </li>
             <li class="team__list-item member-card">
-              <img src="" alt="" class="member-card__img" />
-              <h3 class="member-card__member">John Doe</h3>
-              <p class="member-card__position">President</p>
+              <picture class="member__img-container">
+                <source
+                  srcset="
+                    ./images/member2-desktop.jpg    1x,
+                    ./images/member2-desktop-x2.jpg 2x
+                  "
+                  media="(min-width: 1360px)"
+                  sizes="(min-width: 1360px) 420px"
+                />
+                <source
+                  srcset="
+                    ./images/member2-tablet.jpg    1x,
+                    ./images/member2-tablet-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 223px"
+                />
+                <source
+                  srcset="
+                    ./images/member2-mobile.jpg    1x,
+                    ./images/member2-mobile-x2.jpg 2x
+                  "
+                  media=""
+                  sizes="(min-width: 320px) 280px, 100%"
+                />
+
+                <img
+                  src="./images/member2-mobile.jpg"
+                  alt=""
+                  class="member-card__img"
+                />
+              </picture>
+              <div class="member-card__text">
+                <h3 class="member-card__member">Jane Doe</h3>
+                <p class="member-card__position">Vice President</p>
+              </div>
             </li>
             <li class="team__list-item member-card">
-              <img src="" alt="" class="member-card__img" />
-              <h3 class="member-card__member">John Doe</h3>
-              <p class="member-card__position">President</p>
+              <picture class="member__img-container">
+                <source
+                  srcset="
+                    ./images/member3-desktop.jpg    1x,
+                    ./images/member3-desktop-x2.jpg 2x
+                  "
+                  media="(min-width: 1360px)"
+                  sizes="(min-width: 1360px) 420px"
+                />
+                <source
+                  srcset="
+                    ./images/member3-tablet.jpg    1x,
+                    ./images/member3-tablet-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 223px"
+                />
+                <source
+                  srcset="
+                    ./images/member3-mobile.jpg    1x,
+                    ./images/member3-mobile-x2.jpg 2x
+                  "
+                  media=""
+                  sizes="(min-width: 320px) 280px, 100%"
+                />
+
+                <img
+                  src="./images/member3-mobile.jpg"
+                  alt=""
+                  class="member-card__img"
+                />
+              </picture>
+              <div class="member-card__text">
+                <h3 class="member-card__member">Steve Smith</h3>
+                <p class="member-card__position">Marketing Head</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="callback">
-        <img src="" alt="" class="callback__img" />
+        <picture class="callback__img-container">
+          <source
+            srcset="
+              ./images/callback-desktop.jpg    1x,
+              ./images/callback-desktop-x2.jpg 2x
+            "
+            media="(min-width: 1360px)"
+            sizes="(min-width: 1360px) 680px"
+          />
+          <source
+            srcset="
+              ./images/callback-tablet.jpg    1x,
+              ./images/callback-tablet-x2.jpg 2x
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 384px"
+          />
+          <source
+            srcset="
+              ./images/callback-mobile.jpg    1x,
+              ./images/callback-mobile-x2.jpg 2x
+            "
+            media=""
+            sizes="(min-width: 320px) 320px, 100%"
+          />
+
+          <img
+            src="./images/callback-mobile.jpg"
+            alt=""
+            class="callback__img"
+          />
+        </picture>
         <form action="" class="callback__body">
-          <h2 class="callback__title"></h2>
+          <h2 class="callback__title">Request Callback</h2>
           <input
             type="text"
             name=""
@@ -471,12 +604,41 @@
             class="callback__mail-input"
             placeholder="Enter email*"
           />
-          <button type="submit">Send</button>
+          <button type="submit" class="callback__button">Send</button>
         </form>
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer__socials-list"></ul>
+      <ul class="footer__socials-list">
+        <li class="footer__socials-item">
+          <div class="footer__icon-container">
+            <svg class="footer__icon" width="35" height="35">
+              <use href="images/icons.svg#icon-facebook"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="footer__socials-item">
+          <div class="footer__icon-container">
+            <svg class="footer__icon" width="35" height="35">
+              <use href="images/icons.svg#icon-twitter"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="footer__socials-item">
+          <div class="footer__icon-container">
+            <svg class="footer__icon" width="40" height="35">
+              <use href="images/icons.svg#icon-youtube"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="footer__socials-item">
+          <div class="footer__icon-container">
+            <svg class="footer__icon" width="31" height="35">
+              <use href="images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </div>
+        </li>
+      </ul>
       <p class="footer__copy">Copyright © 2021 - FinanceLedger</p>
     </footer>
   </body>
