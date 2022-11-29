@@ -1,9 +1,10 @@
 .hero {
+  background-color: $default-gray;
   padding-top: 144px;
   padding-bottom: 95px;
   width: 100%;
   margin: 0 auto;
-  background-image: url("/images/bg-mobile.jpg");
+  background-image: url("./images/bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
