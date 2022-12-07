@@ -42,6 +42,13 @@
 .member-card {
 }
 .member-card__img {
+  max-width: 420px;
+  max-height: 286px;
+  transition: transform $time $cubic;
+  .member-card:hover &,
+  .member-card:focus & {
+    transform: scale(1.019);
+  }
 }
 .blog__img-container {
 }

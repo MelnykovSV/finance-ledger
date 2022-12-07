@@ -11,10 +11,16 @@
 .footer__socials-item {
 }
 .footer__icon-container {
+  display: block;
+  cursor: pointer;
 }
 .footer__icon {
   fill: $white;
   display: block;
+  &:hover,
+  &:focus {
+    fill: $button-active-green;
+  }
 }
 .footer__copy {
   line-height: calc(26 / 16);
