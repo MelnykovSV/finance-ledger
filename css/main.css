@@ -703,6 +703,7 @@ button {
 
 .member__img-container {
   position: relative;
+  display: block;
 }
 
 .member-card__overlay {
@@ -714,6 +715,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(0) rotate(0);
+  transition: transform 350ms ease, rotate 350ms ease;
+}
+.member-card:hover .member-card__overlay, .member-card:focus .member-card__overlay {
+  transform: Scale(100%) rotate(360deg);
 }
 
 .member-card__socials-list {
