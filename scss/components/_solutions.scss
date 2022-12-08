@@ -35,6 +35,7 @@
   border: 1px solid $white;
   border-radius: 5px;
   background-color: $green;
+  transition: background-color $time $cubic, box-shadow $time $cubic;
   &:hover,
   &:focus {
     background-color: $button-active-green;

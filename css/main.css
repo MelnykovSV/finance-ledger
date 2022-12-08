@@ -105,6 +105,7 @@ button {
 
 .header__link {
   color: inherit;
+  transition: color 350ms ease;
 }
 .header__link:hover, .header__link:focus {
   color: #23913d;
@@ -119,7 +120,15 @@ button {
   width: 100%;
   height: 2px;
   border-radius: 1px;
+  transform: scaleX(100%);
+  transition: transform 350ms ease;
   background-color: #23913d;
+}
+
+.header__link::after,
+.header__link::after {
+  content: "";
+  transform: scaleX(0);
 }
 
 @media screen and (min-width: 768px) {
@@ -214,6 +223,7 @@ button {
   color: #ffffff;
   border: none;
   border-radius: 5px;
+  transition: background-color 350ms ease, box-shadow 350ms ease;
 }
 .hero__button:hover, .hero__button:focus {
   background-color: #23913d;
@@ -396,6 +406,7 @@ button {
   border: 1px solid #ffffff;
   border-radius: 5px;
   background-color: #28a745;
+  transition: background-color 350ms ease, box-shadow 350ms ease;
 }
 .solutions__button:hover, .solutions__button:focus {
   background-color: #23913d;
@@ -599,6 +610,7 @@ button {
   border: 1px solid #ffffff;
   border-radius: 5px;
   background-color: #0284d0;
+  transition: background-color 350ms ease, box-shadow 350ms ease;
 }
 .blog__button:hover, .blog__button:focus {
   background-color: #0376b8;
@@ -733,6 +745,7 @@ button {
 
 .member-card__icon {
   fill: #ffffff;
+  transition: fill 350ms ease;
 }
 .member-card__icon-container:hover .member-card__icon {
   fill: #28a745;
@@ -856,6 +869,7 @@ button {
   padding-bottom: 10px;
   padding-top: 10px;
   width: 100%;
+  transition: background-color 350ms ease, box-shadow 350ms ease;
 }
 .callback__button:hover, .callback__button:focus {
   background-color: #23913d;

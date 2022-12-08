@@ -81,6 +81,7 @@
 }
 .member-card__icon {
   fill: $white;
+  transition: fill $time $cubic;
   .member-card__icon-container:hover & {
     fill: $green;
   }

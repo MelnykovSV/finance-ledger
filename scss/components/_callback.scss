@@ -51,6 +51,7 @@
   padding-top: 10px;
 
   width: 100%;
+  transition: background-color $time $cubic, box-shadow $time $cubic;
 
   &:hover,
   &:focus {
