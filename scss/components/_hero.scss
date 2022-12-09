@@ -68,6 +68,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 
 .snowflake {
@@ -164,6 +165,24 @@
 
   .hero__subtitle {
     width: auto;
+  }
+  @keyframes snowfall {
+    0% {
+      transform: translate3d(var(--left-ini), 0, 0);
+    }
+    100% {
+      transform: translate3d(var(--left-end), calc(768px + 5vh), 0);
+    }
+  }
+  @for $i from 1 through 200 {
+    .snowflake:nth-child(#{$i}) {
+      --size: #{random(5) * 0.1}vw;
+      --left-ini: #{random(20) - 10}vw;
+      --left-end: #{random(20) - 10}vw;
+      left: #{random(100)}vw;
+      animation: snowfall #{5 + random(10)}s linear infinite;
+      animation-delay: -#{random(10)}s;
+    }
   }
 
   @media screen and (min-device-pixel-ratio: 2),
